@@ -1,0 +1,105 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     background-color: aliceblue;
+     overflow: hidden;
+     text-align: center;
+}
+
+.container {
+     display: flex-wrap;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     align-self: center;
+     margin-top: 25em;
+     margin-left: 43em;
+     width: 50%;
+     position: absolute;
+     transform: translate(-50%, -50%);
+     border-radius: 10px;
+}
+
+#timer{
+     display: flex;
+     justify-content:center;
+     font-family: 'Lato', sans-serif;
+     font-size: 4em;
+     font-weight:300;
+     width: 80%;
+     background: rgb(250, 247, 247);
+     padding: 15px;
+     color: #013bb7;
+     border: 2px solid black;
+     border-radius: 10px;
+     opacity: 0.9;
+}
+
+#buttons {
+     display: flex;
+     justify-content:left;
+     align-items:center;
+     align-self: center;
+}
+
+button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: lightblue;
+     padding: 5px;
+     width: 80px;
+     height: 45px;
+     color: black;
+     font-weight: 500;
+     border: none;
+     font-size: 1.56em;
+     border-radius: 10px;
+     cursor: pointer;
+     outline: none;
+     margin: 2%;
+     margin-left: 25px;
+}
+
+button:nth-last-child(2) {
+     background-color: lightsalmon;
+}
+button:nth-last-child(1) {
+     background-color: lightcoral;
+}
+
+button:hover{
+     cursor:pointer;
+     background: lightgray;
+}
+
+
+/* On mobile, please make all sections stack  */
+@media all and (max-width: 500px){
+     main section, .bottom section{
+         width: 100%;
+     }
+   }
+   
+   /* On tablet, please make the sections in main stack  */
+   @media all and (max-width: 850px){
+     main section{
+       width: 100%;
+     }
+   }
+   
+   /* On laptop, please keep the normal layout, but everything should be light green */
+   @media all and (min-width: 850px){
+     main, .bottom{
+       background: lightgreen;
+     }
+   }
+   
+   /* On larger screens, please keep the normal layout, but everything should be light blue */
+   @media all and (min-width: 1024px){
+     main, .bottom{
+       background: lightblue;
+     }
+   }
